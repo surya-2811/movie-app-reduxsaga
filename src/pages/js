@@ -1,0 +1,8 @@
+const { name, value } = event.target;
+if (name === "gstin" && /^[A-Za-z0-9]*$/.test(value)) {
+  setState({ ...state, [name]: value });
+} else if (name === "cpin" && /^[0-9]*S$/.test(value)) {
+  setState({ ...state, [name]: value });
+} else {
+  setState({ ...state, [name]: value });
+}
